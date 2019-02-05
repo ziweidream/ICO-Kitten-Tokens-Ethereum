@@ -3,8 +3,8 @@ const Web3 = require("web3");
 const compiledToken = require("./build/KittenToken.json");
 
 const provider = new HDWalletProvider(
-  "melt animal sleep wink sound stem artwork crash mobile junior fatigue pact",
-  "https://rinkeby.infura.io/v3/f2e6f5bf8bac405ab171ef1957f81da3"
+  process.env.SEED,
+  process.env.ADDRESS
 );
 
 const web3 = new Web3(provider);
